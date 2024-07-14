@@ -7,6 +7,12 @@ const collectEmployees = function() {
   let firstName = window.prompt("Enter first name")
   let lastName = window.prompt("Enter last name")
   let salary = window.prompt("Enter salary")
+
+  while(isNaN(salary)){
+    window.alert('Please input a number!')
+salary = window.prompt('salary')
+}
+
   employeesArray.push({
       firstName,
       lastName,
@@ -84,13 +90,13 @@ const trackEmployeeData = function() {
 
   getRandomEmployee(employees);
 
-  // employees.sort(function(a,b) {
-  //   if (a.lastName < b.lastName) {
-  //     return -1;
-  //   } else {
-  //     return 1;
-  //   }
-  // });
+  employees.sort(function(a,b) {
+    if (a.lastName < b.lastName) {
+      return -1;
+    } else {
+      return 1;
+    }
+  });
 
   displayEmployees(employees);
 }
