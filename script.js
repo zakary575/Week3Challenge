@@ -13,7 +13,7 @@ const collectEmployees = function() {
       salary
   })
 
-  let keepPlaying = window.confirm('Would you like to add another employee')
+  let keepPlaying = window.confirm('Would you like to add another employee?')
   if (keepPlaying){
   collectEmployees()
   }else(
@@ -84,13 +84,13 @@ const trackEmployeeData = function() {
 
   getRandomEmployee(employees);
 
-  employees.sort(function(a,b) {
-    if (a.lastName < b.lastName) {
-      return -1;
-    } else {
-      return 1;
-    }
-  });
+  // employees.sort(function(a,b) {
+  //   if (a.lastName < b.lastName) {
+  //     return -1;
+  //   } else {
+  //     return 1;
+  //   }
+  // });
 
   displayEmployees(employees);
 }
