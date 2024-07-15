@@ -3,10 +3,11 @@ const addEmployeesBtn = document.querySelector('#add-employees-btn');
 
 // Collect employee data
 employeesArray = []
+salaryArray = []
 const collectEmployees = function() {
   let firstName = window.prompt("Enter first name")
   let lastName = window.prompt("Enter last name")
-  let salary = window.prompt("Enter salary")
+  let salary = Number(window.prompt("Enter salary"))
 
   while(isNaN(salary)){
     window.alert('Please input a number!')
@@ -19,6 +20,8 @@ salary = window.prompt('salary')
       salary
   })
 
+  salaryArray.push(salary)
+
   let keepPlaying = window.confirm('Would you like to add another employee?')
   if (keepPlaying){
   collectEmployees()
@@ -30,7 +33,8 @@ salary = window.prompt('salary')
 
 // Display the average salary
 const displayAverageSalary = function(employeesArray) {
-  // TODO: Calculate and display the average salary
+  if (salaryArray.length = 0) return;
+  const average = salarArray.reduce((a, b) => a + b, 0) / salaryArray.length;
 }
 
 // Select a random employee
