@@ -2,9 +2,8 @@
 const addEmployeesBtn = document.querySelector('#add-employees-btn');
 
 // Collect employee data
-// const employeesArray = []
+const employeesArray = []
 const collectEmployees = function() {
-  const employeesArray = []
   let firstName = window.prompt("Enter first name")
   let lastName = window.prompt("Enter last name")
   let salary = Number(window.prompt("Enter salary"))
@@ -25,7 +24,6 @@ const collectEmployees = function() {
   collectEmployees()
   }else(
       window.alert('Thank you'),
-      console.log(employeesArray)
   )
   return employeesArray
 }
