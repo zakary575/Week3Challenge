@@ -7,7 +7,6 @@ const collectEmployees = function() {
   let firstName = window.prompt("Enter first name")
   let lastName = window.prompt("Enter last name")
   let salary = Number(window.prompt("Enter salary"))
-  console.log(salary)
   while(isNaN(salary)){
     window.alert('Please input a number!')
     salary = Number(window.prompt('salary'))
