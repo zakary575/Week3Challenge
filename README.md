@@ -9,6 +9,4 @@ This website can take in employee data, first name, last name and salary and cre
 
 To use this app you click the "add employee" button and you are prompted to put in the employess first name last name and salary. once finshed you will be prompted if you would like to put in another emplyee. once you are done submitting all the employess a table will be generated with the data.
 
-    ```md
-    ![Screenshot](./assets/Screenshot.png)
-    ```
+![Screenshot](./assets/Screenshot.png)
